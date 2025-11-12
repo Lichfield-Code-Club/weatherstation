@@ -11,9 +11,7 @@ nickname = 'weatherstation/data'
 # network access details
 wifi_ssid = 'GuestCommunity24'
 wifi_password = 'MuPP3ts1133!'
-wifi_ssid = "moo-wifi"
-wifi_password = "Trulsr0k"
-wifi_country = 'GB'
+
 
 # how often to wake up and take a reading (in minutes)
 reading_frequency = 5
