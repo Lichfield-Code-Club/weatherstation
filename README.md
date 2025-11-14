@@ -21,3 +21,49 @@ This schematic shows how to power a Pimoroni weather board from a 12V LiFePO4 ba
 - Optional: log current draw with INA219 or USB meter to refine runtime estimates
 
 *Figure: Schematic showing battery, fuse, buck converter, and weather board wiring.*
+
+## 🔄 Battery Swap Instructions
+
+To maintain uninterrupted power for the Pimoroni weather board, swap the 12V LiFePO4 battery every 3 months (or as needed based on runtime measurements). This guide ensures safe, reproducible swaps inside the Stevensons container.
+
+### 🧰 Required Items
+- Fully charged 12V LiFePO4 battery (20Ah recommended)
+- XT60 or Anderson Powerpole connectors
+- 3A blade fuse (spare)
+- Multimeter (optional, for voltage check)
+- Insulated gloves (recommended)
+
+### 🔌 Swap Procedure
+
+1. **Prepare the replacement battery**
+   - Confirm it's fully charged (≥13.2V for LiFePO4).
+   - Inspect terminals and connectors for corrosion or damage.
+
+2. **Power down the weather board**
+   - If possible, wait for a sleep cycle or manually disable the board.
+   - Disconnect the 5V line from the buck converter output.
+
+3. **Disconnect the old battery**
+   - Unplug the XT60 or Anderson connector.
+   - Remove the fuse if inline.
+   - Store the old battery in a safe, dry location for recharging.
+
+4. **Install the new battery**
+   - Connect the XT60 or Anderson plug securely.
+   - Insert a fresh 3A fuse if needed.
+   - Verify polarity: red to +Vin, black to –Vin on the buck converter.
+
+5. **Restore power**
+   - Reconnect the 5V line to the weather board.
+   - Confirm LED or sensor activity during the next wake cycle.
+
+6. **Log the swap**
+   - Record the date, battery voltage, and any observations.
+   - Update runtime estimates based on previous cycle duration.
+
+### ⚠️ Safety Notes
+- Never short the terminals or reverse polarity.
+- Avoid swapping during rain or high humidity.
+- Recharge removed batteries using a LiFePO4-compatible charger only.
+
+*Figure: Battery swap ensures continuous operation with minimal downtime and traceable maintenance.*
