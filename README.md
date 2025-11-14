@@ -4,7 +4,7 @@ Capture weather data and send to an mqtt broker
 
 This schematic shows how to power a Pimoroni weather board from a 12V LiFePO4 battery housed inside a Stevensons container. The board wakes every 5 minutes, so the system includes a buck converter to drop voltage to 5V and a fuse for protection.
 
-![Power schematic for Pimoroni weather board](schematic.png)
+![Power schematic for Pimoroni weather board](images/weatherstation-schematic.png)
 
 **Components:**
 - 12V LiFePO4 battery (20Ah recommended for 3-month runtime)
